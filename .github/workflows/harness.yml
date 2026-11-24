@@ -1,0 +1,20 @@
+name: logic-harness
+
+# Runs the dependency-free logic harness and the mutation check (plain CPython, no GenLayer SDK).
+# This does NOT deploy the contract and does NOT replace genvm-lint, Direct Mode or Studio tests.
+on:
+  push:
+  pull_request:
+
+jobs:
+  harness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Logic harness
+        run: python3 -m unittest discover -s tests/harness -v
+      - name: Mutation check
+        run: python3 tools/mutation_check.py
