@@ -18,3 +18,7 @@ jobs:
         run: python3 -m unittest discover -s tests/harness -v
       - name: Mutation check
         run: python3 tools/mutation_check.py
+      - name: Independent audit harness
+        run: python3 audit/harness/audit_harness.py
+      - name: Audit harness fault-detection check
+        run: python3 audit/harness/mutant_check.py

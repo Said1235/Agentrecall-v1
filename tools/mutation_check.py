@@ -37,3 +37,4 @@ for name, (old, new) in mutations.items():
     if not killed: survived.append(name)
 open(SRC, "w").write(orig)
 print("survivors:", survived)
+sys.exit(0 if not survived else 1)

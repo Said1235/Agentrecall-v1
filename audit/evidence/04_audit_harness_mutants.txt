@@ -1,0 +1,18 @@
+baseline: audit harness passes against the real contract
+DETECTED  validator ignores per-criterion outcome mismatch
+DETECTED  validator skips claim verification
+DETECTED  validator accepts leader errors
+DETECTED  challenge open to anyone
+DETECTED  adjudicate ignores lifecycle state
+DETECTED  submission content hash not verified
+DETECTED  challenge material hash not verified
+SURVIVED  second adjudication overwrites
+DETECTED  overall verdict not checked against criteria
+DETECTED  persist before consensus (write above nondet block)
+DETECTED  storage touched inside leader_fn
+DETECTED  failed call leaves partial state (status set before validation)
+DETECTED  unexpected exception type escapes (no id type check)
+DETECTED  challenge may be replayed (state check removed)
+DETECTED  evidence ids from other namespaces unchecked
+DETECTED  terminal state reopenable (cancel allowed after accept)
+survivors: ['second adjudication overwrites']

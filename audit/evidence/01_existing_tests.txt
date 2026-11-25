@@ -1,0 +1,104 @@
+test_adjudication_is_permissionless (test_logic.TestAdjudicationFlow.test_adjudication_is_permissionless) ... ok
+test_adjudication_record_is_fully_bound_and_retrievable (test_logic.TestAdjudicationFlow.test_adjudication_record_is_fully_bound_and_retrievable) ... ok
+test_evidence_order_is_canonical (test_logic.TestAdjudicationFlow.test_evidence_order_is_canonical) ... ok
+test_hash_mismatches_rejected_before_any_llm_call (test_logic.TestAdjudicationFlow.test_hash_mismatches_rejected_before_any_llm_call) ... ok
+test_history_is_keyed_and_not_cross_contaminated (test_logic.TestAdjudicationFlow.test_history_is_keyed_and_not_cross_contaminated) ... ok
+test_leader_technical_failures_never_persist_and_are_retryable (test_logic.TestAdjudicationFlow.test_leader_technical_failures_never_persist_and_are_retryable) ... ok
+test_not_adjudicable_before_challenge (test_logic.TestAdjudicationFlow.test_not_adjudicable_before_challenge) ... ok
+test_overall_outcome_derivation (test_logic.TestAdjudicationFlow.test_overall_outcome_derivation) ... ok
+test_same_requester_and_executor_many_commitments_have_distinct_ids (test_logic.TestAdjudicationFlow.test_same_requester_and_executor_many_commitments_have_distinct_ids) ... ok
+test_second_adjudication_rejected (test_logic.TestAdjudicationFlow.test_second_adjudication_rejected) ... ok
+test_validator_disagreement_persists_nothing (test_logic.TestAdjudicationFlow.test_validator_disagreement_persists_nothing) ... ok
+test_accept_by_executor_only (test_logic.TestCommitmentLifecycle.test_accept_by_executor_only) ... ok
+test_bad_ids_rejected (test_logic.TestCommitmentLifecycle.test_bad_ids_rejected) ... ok
+test_cancel_only_requester_only_while_open (test_logic.TestCommitmentLifecycle.test_cancel_only_requester_only_while_open) ... ok
+test_create_success_and_view (test_logic.TestCommitmentLifecycle.test_create_success_and_view) ... ok
+test_duplicate_criteria_ids_rejected (test_logic.TestCommitmentLifecycle.test_duplicate_criteria_ids_rejected) ... ok
+test_duplicate_nonce_same_requester_rejected_other_requester_ok (test_logic.TestCommitmentLifecycle.test_duplicate_nonce_same_requester_rejected_other_requester_ok) ... ok
+test_empty_criteria_rejected (test_logic.TestCommitmentLifecycle.test_empty_criteria_rejected) ... ok
+test_invalid_or_duplicate_kinds_rejected (test_logic.TestCommitmentLifecycle.test_invalid_or_duplicate_kinds_rejected) ... ok
+test_max_criteria_accepted (test_logic.TestCommitmentLifecycle.test_max_criteria_accepted) ... ok
+test_reject_by_executor_only_and_terminal (test_logic.TestCommitmentLifecycle.test_reject_by_executor_only_and_terminal) ... ok
+test_same_requester_and_executor_rejected (test_logic.TestCommitmentLifecycle.test_same_requester_and_executor_rejected) ... ok
+test_state_transition_matrix (test_logic.TestCommitmentLifecycle.test_state_transition_matrix)
+Every (state, operation) pair: allowed iff it is in the documented table. ... ok
+test_too_many_criteria_rejected (test_logic.TestCommitmentLifecycle.test_too_many_criteria_rejected) ... ok
+test_unknown_commitment (test_logic.TestCommitmentLifecycle.test_unknown_commitment) ... ok
+test_zero_executor_rejected (test_logic.TestCommitmentLifecycle.test_zero_executor_rejected) ... ok
+test_contract_loads_even_if_sdk_has_no_keccak (test_logic.TestDeployabilityHeader.test_contract_loads_even_if_sdk_has_no_keccak) ... ok
+test_header_layout_matches_the_studio_example (test_logic.TestDeployabilityHeader.test_header_layout_matches_the_studio_example) ... ok
+test_header_parses_as_exactly_the_runner_json (test_logic.TestDeployabilityHeader.test_header_parses_as_exactly_the_runner_json) ... ok
+test_public_methods_use_only_schema_safe_annotations (test_logic.TestDeployabilityHeader.test_public_methods_use_only_schema_safe_annotations)
+genvm-lint is unavailable here; this AST check replaces its most relevant risk: argument ... ok
+test_source_is_plain_ascii (test_logic.TestDeployabilityHeader.test_source_is_plain_ascii) ... ok
+test_the_original_bug_is_detected_by_this_check (test_logic.TestDeployabilityHeader.test_the_original_bug_is_detected_by_this_check)
+The first delivered file put comment lines directly under the Depends line. ... ok
+test_no_nondeterministic_imports_or_float_math_in_contract (test_logic.TestDeterminismAndBounds.test_no_nondeterministic_imports_or_float_math_in_contract) ... ok
+test_records_are_written_exactly_once_and_never_mutated (test_logic.TestDeterminismAndBounds.test_records_are_written_exactly_once_and_never_mutated)
+Immutability invariant, checked statically: each record map is assigned in exactly one ... ok
+test_state_writes_only_after_nondet_block (test_logic.TestDeterminismAndBounds.test_state_writes_only_after_nondet_block) ... ok
+test_domain_separation (test_logic.TestHashingAndDomains.test_domain_separation) ... ok
+test_encoding_is_injective (test_logic.TestHashingAndDomains.test_encoding_is_injective) ... ok
+test_encoding_rejects_unsupported_types (test_logic.TestHashingAndDomains.test_encoding_rejects_unsupported_types) ... ok
+test_hash_changes_when_any_commitment_field_changes (test_logic.TestHashingAndDomains.test_hash_changes_when_any_commitment_field_changes) ... ok
+test_ids_depend_on_requester_and_nonce (test_logic.TestHashingAndDomains.test_ids_depend_on_requester_and_nonce) ... ok
+test_boundary_lengths (test_logic.TestHostileInput.test_boundary_lengths) ... ok
+test_control_characters_rejected (test_logic.TestHostileInput.test_control_characters_rejected) ... ok
+test_deeply_nested_json_rejected_without_parsing (test_logic.TestHostileInput.test_deeply_nested_json_rejected_without_parsing) ... ok
+test_depth_guard_runs_before_json_parsing (test_logic.TestHostileInput.test_depth_guard_runs_before_json_parsing) ... ok
+test_depth_guard_unit_behaviour (test_logic.TestHostileInput.test_depth_guard_unit_behaviour) ... ok
+test_evidence_id_namespaces_cannot_collide (test_logic.TestHostileInput.test_evidence_id_namespaces_cannot_collide) ... ok
+test_injection_text_is_accepted_as_data_but_is_json_escaped_in_the_prompt (test_logic.TestHostileInput.test_injection_text_is_accepted_as_data_but_is_json_escaped_in_the_prompt) ... ok
+test_lone_surrogate_rejected (test_logic.TestHostileInput.test_lone_surrogate_rejected) ... ok
+test_oversized_inputs_rejected_before_any_llm_and_quickly (test_logic.TestHostileInput.test_oversized_inputs_rejected_before_any_llm_and_quickly) ... ok
+test_trivial_and_duplicate_evidence_handling (test_logic.TestHostileInput.test_trivial_and_duplicate_evidence_handling) ... ok
+test_hash_of_largest_material_is_fast_enough_in_plain_python (test_logic.TestKeccakFallback.test_hash_of_largest_material_is_fast_enough_in_plain_python) ... ok
+test_permutation_and_sponge_match_hashlib_sha3_for_many_lengths (test_logic.TestKeccakFallback.test_permutation_and_sponge_match_hashlib_sha3_for_many_lengths) ... ok
+test_published_keccak256_vectors (test_logic.TestKeccakFallback.test_published_keccak256_vectors) ... ok
+test_sdk_failure_at_runtime_falls_back_to_pure (test_logic.TestKeccakFallback.test_sdk_failure_at_runtime_falls_back_to_pure) ... ok
+test_contract_calls_exec_prompt_in_plain_text_mode (test_logic.TestLlmOutputCoercion.test_contract_calls_exec_prompt_in_plain_text_mode) ... ok
+test_fenced_json_text_is_accepted_like_in_the_studio_example (test_logic.TestLlmOutputCoercion.test_fenced_json_text_is_accepted_like_in_the_studio_example) ... ok
+test_json_text_and_parsed_json_are_equivalent (test_logic.TestLlmOutputCoercion.test_json_text_and_parsed_json_are_equivalent) ... ok
+test_non_json_python_values_still_rejected_by_shape_validation (test_logic.TestLlmOutputCoercion.test_non_json_python_values_still_rejected_by_shape_validation) ... ok
+test_oversized_or_deep_or_invalid_text_rejected (test_logic.TestLlmOutputCoercion.test_oversized_or_deep_or_invalid_text_rejected) ... ok
+test_smoke_header_is_valid_and_matches_main_contract (test_logic.TestSmokeContract.test_smoke_header_is_valid_and_matches_main_contract) ... ok
+test_smoke_logic_runs (test_logic.TestSmokeContract.test_smoke_logic_runs) ... ok
+test_challenge_rules (test_logic.TestSubmissionAndChallenge.test_challenge_rules) ... ok
+test_close_uncontested_is_not_a_verdict (test_logic.TestSubmissionAndChallenge.test_close_uncontested_is_not_a_verdict) ... ok
+test_evidence_count_boundary (test_logic.TestSubmissionAndChallenge.test_evidence_count_boundary) ... ok
+test_evidence_kind_must_be_accepted_by_commitment (test_logic.TestSubmissionAndChallenge.test_evidence_kind_must_be_accepted_by_commitment) ... ok
+test_silence_leaves_commitment_submitted (test_logic.TestSubmissionAndChallenge.test_silence_leaves_commitment_submitted) ... ok
+test_submit_authorization_and_state (test_logic.TestSubmissionAndChallenge.test_submit_authorization_and_state) ... ok
+test_submit_rejects_bad_material (test_logic.TestSubmissionAndChallenge.test_submit_rejects_bad_material) ... ok
+test_submit_success (test_logic.TestSubmissionAndChallenge.test_submit_success) ... ok
+test_01_leader_fulfilled_validator_not_fulfilled (test_logic.TestValidatorRule.test_01_leader_fulfilled_validator_not_fulfilled) ... ok
+test_02_single_criterion_disagreement (test_logic.TestValidatorRule.test_02_single_criterion_disagreement) ... ok
+test_03_omitted_criterion (test_logic.TestValidatorRule.test_03_omitted_criterion) ... ok
+test_04_invented_criterion (test_logic.TestValidatorRule.test_04_invented_criterion) ... ok
+test_05_omitted_finding_leader_downgrades_to_indeterminate (test_logic.TestValidatorRule.test_05_omitted_finding_leader_downgrades_to_indeterminate) ... ok
+test_06_unsupported_finding_rejected_by_verifier (test_logic.TestValidatorRule.test_06_unsupported_finding_rejected_by_verifier) ... ok
+test_07_nonexistent_evidence_reference (test_logic.TestValidatorRule.test_07_nonexistent_evidence_reference) ... ok
+test_08_changed_evidence_package_hash (test_logic.TestValidatorRule.test_08_changed_evidence_package_hash) ... ok
+test_09_changed_submission_id_and_other_ids (test_logic.TestValidatorRule.test_09_changed_submission_id_and_other_ids) ... ok
+test_10_positive_verdict_with_contradictory_criteria (test_logic.TestValidatorRule.test_10_positive_verdict_with_contradictory_criteria) ... ok
+test_10b_negative_verdict_with_all_met (test_logic.TestValidatorRule.test_10b_negative_verdict_with_all_met) ... ok
+test_11_malformed_structured_data (test_logic.TestValidatorRule.test_11_malformed_structured_data) ... ok
+test_12_invalid_schema_version (test_logic.TestValidatorRule.test_12_invalid_schema_version) ... ok
+test_13_unsupported_reason_code (test_logic.TestValidatorRule.test_13_unsupported_reason_code) ... ok
+test_14_validator_cannot_evaluate (test_logic.TestValidatorRule.test_14_validator_cannot_evaluate) ... ok
+test_15_validator_technical_error_never_becomes_agreement (test_logic.TestValidatorRule.test_15_validator_technical_error_never_becomes_agreement) ... ok
+test_different_reason_codes_and_evidence_with_same_outcome_are_not_exact_matched (test_logic.TestValidatorRule.test_different_reason_codes_and_evidence_with_same_outcome_are_not_exact_matched) ... ok
+test_ghost_evidence_rejected_for_every_outcome_type (test_logic.TestValidatorRule.test_ghost_evidence_rejected_for_every_outcome_type)
+Evidence ids must be validated for NOT_MET / INDETERMINATE too, not only MET. ... ok
+test_honest_proposal_accepted (test_logic.TestValidatorRule.test_honest_proposal_accepted) ... ok
+test_leader_error_result_is_never_accepted (test_logic.TestValidatorRule.test_leader_error_result_is_never_accepted) ... ok
+test_met_cannot_rest_only_on_external_reference (test_logic.TestValidatorRule.test_met_cannot_rest_only_on_external_reference) ... ok
+test_met_with_no_evidence_rejected (test_logic.TestValidatorRule.test_met_with_no_evidence_rejected) ... ok
+test_naive_status_only_validator_would_accept_a_forgery_the_real_one_rejects (test_logic.TestValidatorRule.test_naive_status_only_validator_would_accept_a_forgery_the_real_one_rejects) ... ok
+test_non_canonical_ordering_rejected (test_logic.TestValidatorRule.test_non_canonical_ordering_rejected) ... ok
+test_prose_only_differences_cannot_exist_in_the_proposal (test_logic.TestValidatorRule.test_prose_only_differences_cannot_exist_in_the_proposal) ... ok
+
+----------------------------------------------------------------------
+Ran 94 tests in 0.356s
+
+OK

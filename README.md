@@ -62,12 +62,18 @@ pytest tests/direct/ -v
 gltest tests/integration/ -v -s                         # fees apply on Studio v0.123
 ```
 
+## Independent audit
+
+`audit/` contains a read-only security, logic and consensus audit of the contract at commit
+`4c50da7` (0 CRITICAL, 0 HIGH, 3 MEDIUM, 3 LOW). Start with `audit/README.md`. The audit ran on a
+dev-only SDK stub: real GenVM, Studio, LLMs and consensus were **not** tested.
+
 ## Where to look
 
 | If you are... | Read |
 |---------------|------|
 | A frontend engineer | `docs/FRONTEND_INTEGRATION.md` |
-| Reviewing security or consensus | `docs/CONSENSUS_DESIGN.md`, `docs/THREAT_MODEL.md`, `docs/SECURITY_AUDIT.md` |
+| Reviewing security or consensus | `audit/AGENTRECALL_SECURITY_AUDIT.md`, `audit/AGENTRECALL_CONSENSUS_AUDIT.md`, then `docs/CONSENSUS_DESIGN.md`, `docs/THREAT_MODEL.md` |
 | Checking what was actually verified | `docs/TEST_REPORT.md`, `docs/RESEARCH.md` |
 | Deploying | `docs/DEPLOYMENT_READINESS.md` (no public deployment is authorized) |
 | Wondering why something is the way it is | `docs/DECISIONS.md` |
@@ -75,5 +81,5 @@ gltest tests/integration/ -v -s                         # fees apply on Studio v
 ## Open items
 
 1. Run the linter, Direct Mode tests and local Studio tests; fix whatever the real toolchain reports.
-2. Owner decision on `docs/DECISIONS.md` E12 (all criteria evaluated vs only disputed ones).
+2. Owner decisions from the audit: AR-01 (all criteria evaluated vs only disputed ones, `docs/DECISIONS.md` E12), AR-02 (no exit from `CHALLENGED`), AR-03 (prompt size up to ~114 KB). See `audit/AGENTRECALL_REMEDIATION_PRIORITY.md`.
 3. Deploy on the Studio (paste the file unchanged, first line `# v0.4.0`) and report the exact receipt text if it still fails; the unverified runtime behaviours are listed in `docs/DEPLOYMENT_READINESS.md`.

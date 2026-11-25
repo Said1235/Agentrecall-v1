@@ -1,0 +1,533 @@
+{
+  "A10_disputed": [
+    "C1"
+  ],
+  "A10_criteria_sent_to_llm": [
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "A10_overall": "PARTIALLY_FULFILLED",
+  "A10_undisputed_results": [
+    [
+      "C2",
+      "NOT_MET"
+    ],
+    [
+      "C3",
+      "MET"
+    ]
+  ],
+  "A11_docs_claiming_37KB": [
+    "docs/DEPLOYMENT_READINESS.md:97",
+    "docs/SECURITY_AUDIT.md:29",
+    "docs/TEST_REPORT.md:207"
+  ],
+  "A1_non_string_values_accepted_by_writes": [],
+  "A1_calls": 644,
+  "A1_unexpected_exception_types": [],
+  "A1_weird_values_accepted_by_writes": [
+    [
+      "create_commitment",
+      0,
+      "'x'"
+    ],
+    [
+      "create_commitment",
+      0,
+      "'0x0000000000000000000000000000000000000"
+    ],
+    [
+      "create_commitment",
+      0,
+      "'0xzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+    ],
+    [
+      "create_commitment",
+      0,
+      "'0x1111111111111111111111111111111111111"
+    ],
+    [
+      "create_commitment",
+      2,
+      "'x'"
+    ],
+    [
+      "create_commitment",
+      2,
+      "'0x0000000000000000000000000000000000000"
+    ],
+    [
+      "create_commitment",
+      2,
+      "'0xzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+    ],
+    [
+      "create_commitment",
+      2,
+      "'0x1111111111111111111111111111111111111"
+    ],
+    [
+      "submit_delivery",
+      1,
+      "'x'"
+    ],
+    [
+      "submit_delivery",
+      1,
+      "'0x0000000000000000000000000000000000000"
+    ],
+    [
+      "submit_delivery",
+      1,
+      "'0xzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+    ],
+    [
+      "submit_delivery",
+      1,
+      "'0x1111111111111111111111111111111111111"
+    ],
+    [
+      "create_challenge",
+      1,
+      "'x'"
+    ],
+    [
+      "create_challenge",
+      1,
+      "'0x0000000000000000000000000000000000000"
+    ],
+    [
+      "create_challenge",
+      1,
+      "'0xzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+    ],
+    [
+      "create_challenge",
+      1,
+      "'0x1111111111111111111111111111111111111"
+    ]
+  ],
+  "A2_steps": 20000,
+  "A2_totals": {
+    "ok": 1606,
+    "err": 18353,
+    "consensus_fail": 41
+  },
+  "A2_per_operation": {
+    "close": {
+      "ok": 76,
+      "err": 2263
+    },
+    "submit": {
+      "ok": 224,
+      "err": 2469
+    },
+    "adjudicate": {
+      "ok": 139,
+      "err": 2368
+    },
+    "create": {
+      "ok": 517,
+      "err": 1827
+    },
+    "cancel": {
+      "ok": 167,
+      "err": 2300
+    },
+    "accept": {
+      "ok": 225,
+      "err": 2421
+    },
+    "challenge": {
+      "ok": 143,
+      "err": 2357
+    },
+    "reject": {
+      "ok": 115,
+      "err": 2389
+    }
+  },
+  "A3_mutations_tested": 12303,
+  "A3_accepted_material_changes": 0,
+  "A3_accepted_immaterial_changes": 306,
+  "A3_immaterial_examples": [
+    [
+      {
+        "criterion_id": "C1",
+        "outcome": "MET",
+        "reason_codes": [
+          "EVIDENCE_SUFFICIENT"
+        ],
+        "evidence_ids": [
+          "S:#DELIVERY",
+          "S:E1"
+        ]
+      },
+      {
+        "criterion_id": "C2",
+        "outcome": "NOT_MET",
+        "reason_codes": [
+          "DELIVERY_INCOMPLETE"
+        ],
+        "evidence_ids": []
+      },
+      {
+        "criterion_id": "C3",
+        "outcome": "INDETERMINATE",
+        "reason_codes": [
+          "EVIDENCE_INSUFFICIENT"
+        ],
+        "evidence_ids": []
+      }
+    ],
+    [
+      {
+        "criterion_id": "C1",
+        "outcome": "MET",
+        "reason_codes": [
+          "EVIDENCE_SUFFICIENT"
+        ],
+        "evidence_ids": [
+          "S:E1"
+        ]
+      },
+      {
+        "criterion_id": "C2",
+        "outcome": "NOT_MET",
+        "reason_codes": [
+          "DELIVERY_INCOMPLETE"
+        ],
+        "evidence_ids": [
+          "S:#DELIVERY"
+        ]
+      },
+      {
+        "criterion_id": "C3",
+        "outcome": "INDETERMINATE",
+        "reason_codes": [
+          "EVIDENCE_INSUFFICIENT"
+        ],
+        "evidence_ids": []
+      }
+    ],
+    [
+      {
+        "criterion_id": "C1",
+        "outcome": "MET",
+        "reason_codes": [
+          "EVIDENCE_SUFFICIENT"
+        ],
+        "evidence_ids": [
+          "S:#DELIVERY"
+        ]
+      },
+      {
+        "criterion_id": "C2",
+        "outcome": "NOT_MET",
+        "reason_codes": [
+          "DELIVERY_INCOMPLETE"
+        ],
+        "evidence_ids": [
+          "S:#DELIVERY"
+        ]
+      },
+      {
+        "criterion_id": "C3",
+        "outcome": "INDETERMINATE",
+        "reason_codes": [
+          "EVIDENCE_INSUFFICIENT"
+        ],
+        "evidence_ids": []
+      }
+    ],
+    [
+      {
+        "criterion_id": "C1",
+        "outcome": "MET",
+        "reason_codes": [
+          "EVIDENCE_SUFFICIENT"
+        ],
+        "evidence_ids": [
+          "S:E1"
+        ]
+      },
+      {
+        "criterion_id": "C2",
+        "outcome": "NOT_MET",
+        "reason_codes": [
+          "DELIVERY_INCOMPLETE"
+        ],
+        "evidence_ids": [
+          "S:#DELIVERY"
+        ]
+      },
+      {
+        "criterion_id": "C3",
+        "outcome": "INDETERMINATE",
+        "reason_codes": [
+          "EVIDENCE_INSUFFICIENT"
+        ],
+        "evidence_ids": []
+      }
+    ],
+    [
+      {
+        "criterion_id": "C1",
+        "outcome": "MET",
+        "reason_codes": [
+          "EVIDENCE_SUFFICIENT"
+        ],
+        "evidence_ids": [
+          "S:#DELIVERY"
+        ]
+      },
+      {
+        "criterion_id": "C2",
+        "outcome": "NOT_MET",
+        "reason_codes": [
+          "DELIVERY_INCOMPLETE"
+        ],
+        "evidence_ids": [
+          "S:#DELIVERY"
+        ]
+      },
+      {
+        "criterion_id": "C3",
+        "outcome": "INDETERMINATE",
+        "reason_codes": [
+          "EVIDENCE_INSUFFICIENT"
+        ],
+        "evidence_ids": []
+      }
+    ]
+  ],
+  "A3_immaterial_by_changed_field": {
+    "evidence_ids": 293,
+    "reason_codes": 13
+  },
+  "A3_accepted_with_structural_violation": 0,
+  "A3_own_outcome_cases": 300,
+  "A4_variants": {
+    "NFD instead of NFC": "[EXPECTED] HASH_MISMATCH",
+    "CRLF instead of LF": "[EXPECTED] HASH_MISMATCH",
+    "trailing space removed": "[EXPECTED] HASH_MISMATCH",
+    "leading BOM": "[EXPECTED] HASH_MISMATCH",
+    "zero-width space inserted": "[EXPECTED] HASH_MISMATCH",
+    "homoglyph (Cyrillic a)": "[EXPECTED] HASH_MISMATCH",
+    "truncated": "[EXPECTED] HASH_MISMATCH",
+    "tab instead of space": "[EXPECTED] HASH_MISMATCH",
+    "case change": "[EXPECTED] HASH_MISMATCH"
+  },
+  "A4_duplicate_json_keys_accepted": true,
+  "A4_json_edge_cases": {
+    "lone surrogate escape in JSON string": "[EXPECTED] INVALID_INPUT: evidence content is not valid text",
+    "NaN constant": "[EXPECTED] INVALID_INPUT: evidence_json items must be {id, kind, content}",
+    "huge integer": "[EXPECTED] INVALID_JSON: evidence_json",
+    "object not list": "[EXPECTED] INVALID_INPUT: evidence_json must be a JSON array",
+    "null": "[EXPECTED] INVALID_INPUT: evidence_json must be a JSON array",
+    "trailing garbage": "[EXPECTED] INVALID_JSON: evidence_json",
+    "non-string id": "[EXPECTED] INVALID_INPUT: evidence id must be 1..32 characters",
+    "id with colon": "[EXPECTED] INVALID_INPUT: evidence id has illegal characters",
+    "id with hash": "[EXPECTED] INVALID_INPUT: evidence id has illegal characters",
+    "kind as list": "[EXPECTED] INVALID_INPUT: evidence_json is nested too deeply",
+    "content as object": "[EXPECTED] INVALID_INPUT: evidence_json is nested too deeply",
+    "nul inside JSON string": "[EXPECTED] INVALID_INPUT: evidence content contains control characters"
+  },
+  "A5_matrix": {
+    "accept/requester": "denied:UNAUTHORIZED",
+    "accept/executor": "allowed",
+    "accept/other": "denied:UNAUTHORIZED",
+    "reject/requester": "denied:UNAUTHORIZED",
+    "reject/executor": "allowed",
+    "reject/other": "denied:UNAUTHORIZED",
+    "cancel/requester": "allowed",
+    "cancel/executor": "denied:UNAUTHORIZED",
+    "cancel/other": "denied:UNAUTHORIZED",
+    "submit/requester": "denied:UNAUTHORIZED",
+    "submit/executor": "allowed",
+    "submit/other": "denied:UNAUTHORIZED",
+    "challenge/requester": "allowed",
+    "challenge/executor": "denied:UNAUTHORIZED",
+    "challenge/other": "denied:UNAUTHORIZED",
+    "close/requester": "allowed",
+    "close/executor": "denied:UNAUTHORIZED",
+    "close/other": "denied:UNAUTHORIZED",
+    "adjudicate/requester": "allowed",
+    "adjudicate/executor": "allowed",
+    "adjudicate/other": "allowed"
+  },
+  "A6_exits_from_CHALLENGED_when_llm_unavailable": {
+    "accept": "[EXPECTED] INVALID_STATE",
+    "reject": "[EXPECTED] INVALID_STATE",
+    "cancel": "[EXPECTED] INVALID_STATE",
+    "close_uncontested": "[EXPECTED] INVALID_STATE",
+    "submit": "[EXPECTED] INVALID_STATE",
+    "challenge_again": "[EXPECTED] INVALID_STATE",
+    "adjudicate": "CONSENSUS_FAILURE"
+  },
+  "A7_closure_freevars": {
+    "leader_fn": [
+      "ctx"
+    ],
+    "validator_fn": [
+      "ctx"
+    ]
+  },
+  "A7_cloudpickle_roundtrip": "leader_fn and validator_fn pickled/unpickled and executed (cloudpickle 3.1.2)",
+  "A7_for_loops_reviewed": 25,
+  "A7_for_loop_iterables": [
+    "('commitment_id', 'submission_id', 'challenge_id', 'evidence_package_hash')",
+    "ch_evidence",
+    "cited",
+    "entries",
+    "range(0, len(padded), rate)",
+    "range(24)",
+    "range(5)",
+    "range(rate // 8)",
+    "raw",
+    "reasons",
+    "sub_evidence",
+    "text",
+    "value",
+    "zip(own, proposed)"
+  ],
+  "A7_storage_writes_in_adjudicate": [
+    [
+      1057,
+      "self.adjudications[aid]"
+    ],
+    [
+      1073,
+      "self.commitment_status[commitment_id]"
+    ]
+  ],
+  "A8_max_ascii": {
+    "prompt": {
+      "eval_prompt_bytes": 40448,
+      "verify_prompt_bytes": 41448
+    },
+    "seconds": {
+      "create_commitment": 0.0003,
+      "submit_delivery": 0.001,
+      "create_challenge": 0.0005,
+      "adjudicate_incl_mock_llm_and_stub_validator": 0.0019
+    }
+  },
+  "A8_max_astral": {
+    "prompt": {
+      "eval_prompt_bytes": 113788,
+      "verify_prompt_bytes": 114788
+    },
+    "seconds": {
+      "create_commitment": 0.0004,
+      "submit_delivery": 0.0013,
+      "create_challenge": 0.0006,
+      "adjudicate_incl_mock_llm_and_stub_validator": 0.0022
+    }
+  },
+  "A8_astral_inflation_factor_eval": 2.81,
+  "A8_300KB_rejection_seconds": {
+    "adjudicate content": 0.0002,
+    "adjudicate evidence_json": 0.0001,
+    "adjudicate challenge_statement": 0.0,
+    "adjudicate disputed_json": 0.0,
+    "adjudicate challenge_evidence_json": 0.0,
+    "create_commitment description": 0.0,
+    "create_commitment criteria_json": 0.0,
+    "create_commitment nonce": 0.0
+  },
+  "A8_pure_keccak_seconds_for_32KB_cpython": 0.0743,
+  "A9_sdk_checklist": [
+    [
+      "runner header lines 1-2 (# v0.4.0 + Depends py-genlayer:kzybg95x...)",
+      "PASS",
+      2
+    ],
+    [
+      "import genlayer as gl",
+      "PASS",
+      8
+    ],
+    [
+      "from genlayer.types import *",
+      "PASS",
+      9
+    ],
+    [
+      "gl.contract.Contract base class",
+      "PASS",
+      797
+    ],
+    [
+      "@gl.storage.allow on storage dataclasses",
+      "PASS",
+      732
+    ],
+    [
+      "gl.storage.TreeMap annotations",
+      "PASS",
+      798
+    ],
+    [
+      "run_nondet_default used",
+      "PASS",
+      1045
+    ],
+    [
+      "UserError with a single string",
+      "PASS",
+      1028
+    ],
+    [
+      "generic run_nondet / run_nondet_unsafe NOT used",
+      "PASS",
+      null
+    ],
+    [
+      "removed __receive__ NOT used",
+      "PASS",
+      null
+    ],
+    [
+      "salt_nonce NOT used",
+      "PASS",
+      null
+    ],
+    [
+      "old import style NOT used (from genlayer import *)",
+      "PASS",
+      null
+    ],
+    [
+      "old base class NOT used (gl.Contract)",
+      "PASS",
+      null
+    ],
+    [
+      "old storage decorator NOT used (allow_storage)",
+      "PASS",
+      null
+    ],
+    [
+      "old message accessor NOT used (gl.message_raw)",
+      "PASS",
+      null
+    ],
+    [
+      "eq_principle NOT used",
+      "PASS",
+      null
+    ],
+    [
+      "web access NOT used",
+      "PASS",
+      null
+    ],
+    [
+      "exec_prompt response_format NOT used",
+      "PASS",
+      null
+    ]
+  ]
+}

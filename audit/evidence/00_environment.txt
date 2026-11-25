@@ -1,0 +1,17 @@
+== AUDIT ENVIRONMENT ==
+2026-11-25T00:28:16Z
+git branch: main
+git commit: 4c50da760bdd997eba9e0f6e954efae49e83f907
+git status --short (lines): 0
+contract sha256: 64575c671b33ebb5d9ae0972a90ab296e7dbbe1ab3b8bc0f2984d3a0914b5e9d
+Python 3.12.3
+genvm-lint: NOT AVAILABLE
+genlayer:   NOT AVAILABLE
+gltest:     NOT AVAILABLE
+pytest:     NOT AVAILABLE
+docker:     NOT AVAILABLE
+pip:        /usr/bin/pip
+-- pip: genlayer-related packages --
+cloudpickle                3.1.2
+-- network for shell (bash tool) --
+urllib.error.URLError: <urlopen error [Errno -2] Name or service not known>

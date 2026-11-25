@@ -1,0 +1,21 @@
+baseline OK
+KILLED   comment glued under runner line (the real deploy bug)
+KILLED   address-typed public argument
+KILLED   decorated __init__ (forbidden in v0.4)
+KILLED   json response_format reintroduced
+KILLED   keccak fallback broken (wrong padding)
+KILLED   validator skips claim verification
+KILLED   validator skips independent outcome comparison
+KILLED   validator accepts leader errors
+KILLED   no content hash check at adjudication
+KILLED   MET may rest on external reference
+KILLED   overall not derived consistently
+KILLED   evidence ids not checked against package
+KILLED   ids not compared (package hash)
+KILLED   anyone can accept
+KILLED   challenge allowed in wrong state
+KILLED   no domain separation
+KILLED   duplicate evidence content allowed
+KILLED   no depth guard
+KILLED   persist even if status check skipped
+survivors: []
