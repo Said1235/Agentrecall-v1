@@ -6,7 +6,9 @@ the repo (tests/harness/stub). It therefore audits CONTRACT LOGIC. It cannot aud
 GenVM, real storage, real LLMs or real consensus (see the reports for what stays unverified).
 
 Run (from the repository root):  python3 audit/harness/audit_harness.py [-v]
-Statistics for the reports are written to audit/evidence/stats.json.
+Statistics are written to audit/.out/stats.json (git-ignored). The versioned snapshot
+the reports cite is audit/evidence/stats.json; to regenerate it deliberately run with
+AUDIT_EVIDENCE_DIR=audit/evidence (timing values vary between runs).
 """
 
 import ast
@@ -24,7 +26,7 @@ import unittest
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.environ.get("AGENTRECALL_REPO", os.path.abspath(os.path.join(HERE, "..", "..")))
-EVIDENCE = os.environ.get("AUDIT_EVIDENCE_DIR", os.path.abspath(os.path.join(HERE, "..", "evidence")))
+EVIDENCE = os.environ.get("AUDIT_EVIDENCE_DIR", os.path.abspath(os.path.join(HERE, "..", ".out")))
 CONTRACT_PATH = os.path.join(REPO, "contracts", "agent_recall.py")
 sys.path.insert(0, os.path.join(REPO, "tests", "harness", "stub"))
 

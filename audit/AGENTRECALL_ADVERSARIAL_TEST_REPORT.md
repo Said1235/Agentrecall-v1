@@ -21,7 +21,7 @@ Audited commit `4c50da760bdd997eba9e0f6e954efae49e83f907`. Contract SHA-256 `645
 | 0 | environment inspection (see file) | 0 | no GenLayer tooling installed | `evidence/00_environment.txt` |
 | 1 | `python3 -m unittest discover -s tests/harness -v` (the author's existing suite, unmodified) | 0 | 94 tests, OK | `evidence/01_existing_tests.txt` |
 | 2 | `python3 tools/mutation_check.py` (the author's mutation check) | 0 | 19 mutations, 19 detected | `evidence/02_existing_mutations.txt` |
-| 3 | `python3 audit/harness/audit_harness.py -v` (independent audit harness) | 0 | **34 tests, OK** | `evidence/03_audit_harness_run.txt`, `evidence/stats.json` |
+| 3 | `python3 audit/harness/audit_harness.py -v` (independent audit harness) | 0 | **34 tests, OK** | `evidence/03_audit_harness_run.txt`, `evidence/stats.json` (versioned snapshot) |
 | 4 | `python3 audit/harness/mutant_check.py` (does the audit harness detect injected faults?) | 0 | baseline passes; **15 of 16** faults detected; 1 equivalent mutant (AR-09) | `evidence/04_audit_harness_mutants.txt` |
 
 Not run, and why: `genvm-lint check` / `genvm-lint schema` (tool unavailable), `pytest tests/direct/` (pytest and genlayer-test unavailable), `gltest tests/integration/` (no Studio/Docker), any test with a real LLM.

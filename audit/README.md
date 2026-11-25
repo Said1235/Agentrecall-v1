@@ -19,8 +19,8 @@ Read-only security, logic and consensus audit of `contracts/agent_recall.py`.
 ## Reproduce
 
 ```
-python3 audit/harness/audit_harness.py -v      # 34 tests; writes audit/evidence/stats.json
+python3 audit/harness/audit_harness.py -v      # 34 tests; writes audit/.out/stats.json (git-ignored)
 python3 audit/harness/mutant_check.py          # the harness must detect injected faults
 ```
 
-`audit/evidence/` holds the raw outputs referenced by the reports.
+`audit/evidence/` holds the raw outputs referenced by the reports (a versioned snapshot; running the harness does not modify it, so the working tree stays clean).
